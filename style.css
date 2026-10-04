@@ -1,3 +1,5 @@
+
+
 header { 
     text-align: center;
 }
@@ -85,6 +87,10 @@ button {
     justify-self: start;
 }
 
+button:hover {
+    opacity: 0.9;
+}
+
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     box-sizing: border-box;
@@ -92,6 +98,11 @@ input[type="text"], input[type="email"], textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline:2px solid #575700;
+    border-color: #575700;
 }
 
 label {
@@ -105,4 +116,39 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        flex: 100%;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .bilde {
+        width: 100%;
+    }
+
+    button {
+        grid-column: 1;
+        justify-self: center;
+    }
+
+    body {
+        padding: 1em;
+    }
+
+    
 }

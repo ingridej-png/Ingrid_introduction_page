@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Min introduksjonsside</title>@
+    <title>Min introduksjonsside</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +24,7 @@
         <img class="bilde" src="ingrid.jpg" alt="Bilde av Ingrid Jerstad">
         
         <section class="Om meg" id="Om meg">
-            <h2> Om meg </h2>
+            <h2>Om meg</h2>
             <p>Jeg er en 33 år gammel nordlending fra Narvik, men har bodd i Oslo i 15 år. Jeg flyttet til hovedstaden for å ta utdanningen min som danser på Bårdar Akademiet, og har siden jobbet som dansepedagog.</p>
             <p> I tillegg jobber jeg med administrasjon og arrangementer for Den Norske Ballettskole & Akademi, blant annet med Valdres Sommerballett og World Ballet Grand Prix Norway. 
                 De siste tre årene har jeg også jobbet som faglærer i Kunst og håndverk på en ungdomsskole.</p>
@@ -34,7 +34,7 @@
             
         <div class="container">
             <section class="box" id="Interesser">
-                <h3> Interesser </h3>
+                <h3>Interesser</h3>
                 <ul>
                     <li>Danse</li>
                     <li>Mat og trening</li>
@@ -59,17 +59,32 @@
                 <form>
                     <div class="form">
                         <label for="name">Ditt navn:</label>
-                        <input type="text" placeholder="Ditt navn" required id="name">
+                        <input 
+                        type="text" 
+                        id="name" 
+                        name="name"
+                        placeholder="Ditt navn" 
+                        required>
                     </div>
                         
                     <div class="form">
                         <label for="email">Din e-post:</label>
-                        <input type="email" placeholder="Din e-post" required id="email">
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="Din e-post" 
+                        required>
                     </div>
                         
                     <div class="form">
                         <label for="message">Din melding:</label>
-                        <textarea placeholder="Din melding" required id="message"></textarea>
+                        <textarea 
+                        id="message" 
+                        name="message"
+                        placeholder="Din melding" 
+                        required>
+                        </textarea>
                     </div>
                         
                     <button type="submit">Send</button>
