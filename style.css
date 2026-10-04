@@ -18,12 +18,12 @@ body {
   margin: 20px auto;
   display: block;
   border: none;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 section {
   border: none;
-  border-radius: 40px;
+  border-radius: 30px;
   background-color: beige;
   padding: 2em;
   margin-bottom: 20px;
@@ -49,15 +49,21 @@ section {
     display: flex;
     flex-direction: row; 
     align-content: space-evenly;
-
+    border-radius: 30px; 
  }
 
+button { 
+    background-color: #575700;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  border: none;
-  border-radius: 40px;
-  background-color: beige;
+
 }
