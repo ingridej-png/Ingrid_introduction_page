@@ -2,6 +2,23 @@ header {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #575700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 body {
   background-color: white;
   color: #575700;
@@ -88,5 +105,4 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-
 }
