@@ -29,6 +29,12 @@ section {
   margin-bottom: 20px;
 }
 
+h2, h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
 .container { 
     display: flex;
     justify-content: space-evenly;
@@ -46,19 +52,36 @@ section {
 }
 
 .form {
-    display: flex;
-    flex-direction: row; 
-    align-content: space-evenly;
-    border-radius: 30px; 
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 10px; 
  }
 
 button { 
     background-color: #575700;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 25px;
     cursor: pointer;
     border-radius: 5px;
+    grid-column: 2;
+    justify-self: start;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+   
+    padding: 10px 0;
+    font-weight: normal;
+    align-items: start;
 }
 
 footer {
